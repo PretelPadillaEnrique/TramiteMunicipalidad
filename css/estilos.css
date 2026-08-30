@@ -1,0 +1,81 @@
+/* Estilo general de todas las páginas */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Color de la barra superior */
+.navbar {
+    background-color: #12355b;
+}
+
+/* Texto de la barra */
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Menú lateral */
+.menu-lateral {
+    min-height: calc(100vh - 56px);
+    background-color: #12355b;
+}
+
+/* Enlaces del menú */
+.menu-lateral a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+}
+
+/* Efecto cuando pasamos el mouse */
+.menu-lateral a:hover {
+    background-color: #1d4d7a;
+}
+
+/* Espacio del contenido */
+.contenido {
+    padding: 25px;
+}
+
+/* Títulos */
+.titulo {
+    color: #12355b;
+    font-weight: bold;
+}
+
+/* Tarjetas */
+.card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Estado pendiente */
+.estado-pendiente {
+    background-color: #ffc107;
+    color: #000;
+}
+
+/* Estado aprobado */
+.estado-aprobado {
+    background-color: #198754;
+    color: white;
+}
+
+/* Estado observado */
+.estado-observado {
+    background-color: #fd7e14;
+    color: white;
+}
+
+/* Estado rechazado */
+.estado-rechazado {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Espacio entre formularios */
+.formulario {
+    max-width: 800px;
+}

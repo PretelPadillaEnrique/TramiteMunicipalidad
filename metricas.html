@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Métricas del sistema</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <!-- Barra superior -->
+    <nav class="navbar">
+
+        <div class="container-fluid">
+
+            <span class="navbar-brand">
+                Municipalidad de Los Olivos
+            </span>
+
+            <span class="text-white">
+                Administrador
+            </span>
+
+        </div>
+
+    </nav>
+
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <!-- Menú lateral -->
+            <aside class="col-md-2 menu-lateral">
+
+                <a href="02-gestionar-expediente.html">
+                    Gestionar expediente
+                </a>
+
+                <a href="03-buscar-expediente.html">
+                    Buscar expediente
+                </a>
+
+                <a href="07-registrar-area.html">
+                    Registrar área
+                </a>
+
+                <a href="10-listar-areas.html">
+                    Listar áreas
+                </a>
+
+                <a href="11-registrar-categoria.html">
+                    Registrar categoría
+                </a>
+
+                <a href="14-listar-categorias.html">
+                    Listar categorías
+                </a>
+
+                <a href="15-registrar-usuario.html">
+                    Registrar usuario
+                </a>
+
+                <a href="18-listar-usuarios.html">
+                    Listar usuarios
+                </a>
+
+                <a href="19-metricas.html">
+                    Métricas
+                </a>
+
+                <a href="20-contacto-publicidad.html">
+                    Información
+                </a>
+
+                <a href="01-login.html">
+                    Cerrar sesión
+                </a>
+
+            </aside>
+
+
+            <!-- Contenido -->
+            <main class="col-md-10 contenido">
+
+                <h2 class="titulo mb-4">
+                    Métricas del sistema
+                </h2>
+
+
+                <!-- Indicadores -->
+                <div class="row">
+
+                    <div class="col-md-4 mb-4">
+
+                        <div class="card indicador">
+
+                            <h6>
+                                Expedientes registrados
+                            </h6>
+
+                            <h2>
+                                125
+                            </h2>
+
+                            <p>
+                                Total de expedientes
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4 mb-4">
+
+                        <div class="card indicador">
+
+                            <h6>
+                                Expedientes atendidos
+                            </h6>
+
+                            <h2>
+                                98
+                            </h2>
+
+                            <p>
+                                Expedientes resueltos
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4 mb-4">
+
+                        <div class="card indicador">
+
+                            <h6>
+                                Expedientes pendientes
+                            </h6>
+
+                            <h2>
+                                27
+                            </h2>
+
+                            <p>
+                                Pendientes de atención
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Métricas -->
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+
+                        <div class="card p-4">
+
+                            <h5>
+                                Expedientes por estado
+                            </h5>
+
+                            <p>
+                                Pendientes
+                            </p>
+
+                            <div class="progress mb-3">
+
+                                <div
+                                    class="progress-bar"
+                                    style="width: 30%;">
+                                    30%
+                                </div>
+
+                            </div>
+
+
+                            <p>
+                                Aprobados
+                            </p>
+
+                            <div class="progress mb-3">
+
+                                <div
+                                    class="progress-bar"
+                                    style="width: 55%;">
+                                    55%
+                                </div>
+
+                            </div>
+
+
+                            <p>
+                                Observados
+                            </p>
+
+                            <div class="progress">
+
+                                <div
+                                    class="progress-bar"
+                                    style="width: 15%;">
+                                    15%
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6 mb-4">
+
+                        <div class="card p-4">
+
+                            <h5>
+                                Atención por área
+                            </h5>
+
+                            <p>
+                                Obras Públicas
+                            </p>
+
+                            <div class="progress mb-3">
+
+                                <div
+                                    class="progress-bar"
+                                    style="width: 70%;">
+                                    70%
+                                </div>
+
+                            </div>
+
+
+                            <p>
+                                Rentas
+                            </p>
+
+                            <div class="progress mb-3">
+
+                                <div
+                                    class="progress-bar"
+                                    style="width: 50%;">
+                                    50%
+                                </div>
+
+                            </div>
+
+
+                            <p>
+                                Desarrollo Urbano
+                            </p>
+
+                            <div class="progress">
+
+                                <div
+                                    class="progress-bar"
+                                    style="width: 40%;">
+                                    40%
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Tabla resumen -->
+                <div class="card p-4">
+
+                    <h5>
+                        Resumen de atención
+                    </h5>
+
+                    <table class="table table-hover">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Área</th>
+                                <th>Expedientes</th>
+                                <th>Atendidos</th>
+                                <th>Pendientes</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Obras Públicas
+                                </td>
+
+                                <td>
+                                    50
+                                </td>
+
+                                <td>
+                                    40
+                                </td>
+
+                                <td>
+                                    10
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Rentas
+                                </td>
+
+                                <td>
+                                    45
+                                </td>
+
+                                <td>
+                                    38
+                                </td>
+
+                                <td>
+                                    7
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Desarrollo Urbano
+                                </td>
+
+                                <td>
+                                    30
+                                </td>
+
+                                <td>
+                                    20
+                                </td>
+
+                                <td>
+                                    10
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
