@@ -1,390 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Métricas del sistema</title>
+  <title>Métricas del sistema</title>
 
-    <!-- Bootstrap -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
-
-    <!-- CSS propio -->
-    <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
 
 </head>
-
 <body>
 
-    <!-- Barra superior -->
-    <nav class="navbar">
-
-        <div class="container-fluid">
-
-            <span class="navbar-brand">
-                Municipalidad de Los Olivos
-            </span>
-
-            <span class="text-white">
-                Administrador
-            </span>
-
-        </div>
-
-    </nav>
-
-
+  <nav class="navbar">
     <div class="container-fluid">
+      <span class="navbar-brand">Municipalidad de Los Olivos</span>
+      <span class="text-white">Administrador</span>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <aside class="col-md-2 menu-lateral">
+        <a href="gestionar-expediente.html">Gestionar expediente</a>
+        <a href="buscar-expediente.html">Buscar expediente</a>
+        <a href="registrar-area.html">Registrar área</a>
+        <a href="listar-areas.html">Listar áreas</a>
+        <a href="registrar-categoria.html">Registrar categoría</a>
+        <a href="listar-categorias.html">Listar categorías</a>
+        <a href="registrar-usuario.html">Registrar usuario</a>
+        <a href="listar-usuarios.html">Listar usuarios</a>
+        <a href="metricas.html">Métricas</a>
+        <a href="contacto-publicidad.html">Información</a>
+        <a href="login.html">Cerrar sesión</a>
+      </aside>
+
+      <main class="col-md-10 contenido">
+        <h2 class="titulo mb-4">Métricas del sistema</h2>
+        <p class="text-muted mb-4">Imágenes referenciales. En este avance no hay conexión a base de datos, por lo que los valores mostrados son ilustrativos.</p>
 
         <div class="row">
 
-            <!-- Menú lateral -->
-            <aside class="col-md-2 menu-lateral">
-
-                <a href="gestionar-expediente.html">
-                    Gestionar expediente
-                </a>
-
-                <a href="buscar-expediente.html">
-                    Buscar expediente
-                </a>
-
-                <a href="registrar-area.html">
-                    Registrar área
-                </a>
-
-                <a href="listar-areas.html">
-                    Listar áreas
-                </a>
-
-                <a href="registrar-categoria.html">
-                    Registrar categoría
-                </a>
-
-                <a href="listar-categorias.html">
-                    Listar categorías
-                </a>
-
-                <a href="registrar-usuario.html">
-                    Registrar usuario
-                </a>
-
-                <a href="listar-usuarios.html">
-                    Listar usuarios
-                </a>
-
-                <a href="metricas.html">
-                    Métricas
-                </a>
-
-                <a href="contacto-publicidad.html">
-                    Información
-                </a>
-
-                <a href="login.html">
-                    Cerrar sesión
-                </a>
-
-            </aside>
-
-
-            <!-- Contenido -->
-            <main class="col-md-10 contenido">
-
-                <h2 class="titulo mb-4">
-                    Métricas del sistema
-                </h2>
-
-
-                <!-- Indicadores -->
-                <div class="row">
-
-                    <div class="col-md-4 mb-4">
-
-                        <div class="card indicador">
-
-                            <h6>
-                                Expedientes registrados
-                            </h6>
-
-                            <h2>
-                                125
-                            </h2>
-
-                            <p>
-                                Total de expedientes
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-md-4 mb-4">
-
-                        <div class="card indicador">
-
-                            <h6>
-                                Expedientes atendidos
-                            </h6>
-
-                            <h2>
-                                98
-                            </h2>
-
-                            <p>
-                                Expedientes resueltos
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-md-4 mb-4">
-
-                        <div class="card indicador">
-
-                            <h6>
-                                Expedientes pendientes
-                            </h6>
-
-                            <h2>
-                                27
-                            </h2>
-
-                            <p>
-                                Pendientes de atención
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Métricas -->
-                <div class="row">
-
-                    <div class="col-md-6 mb-4">
-
-                        <div class="card p-4">
-
-                            <h5>
-                                Expedientes por estado
-                            </h5>
-
-                            <p>
-                                Pendientes
-                            </p>
-
-                            <div class="progress mb-3">
-
-                                <div
-                                    class="progress-bar"
-                                    style="width: 30%;">
-                                    30%
-                                </div>
-
-                            </div>
-
-
-                            <p>
-                                Aprobados
-                            </p>
-
-                            <div class="progress mb-3">
-
-                                <div
-                                    class="progress-bar"
-                                    style="width: 55%;">
-                                    55%
-                                </div>
-
-                            </div>
-
-
-                            <p>
-                                Observados
-                            </p>
-
-                            <div class="progress">
-
-                                <div
-                                    class="progress-bar"
-                                    style="width: 15%;">
-                                    15%
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-md-6 mb-4">
-
-                        <div class="card p-4">
-
-                            <h5>
-                                Atención por área
-                            </h5>
-
-                            <p>
-                                Obras Públicas
-                            </p>
-
-                            <div class="progress mb-3">
-
-                                <div
-                                    class="progress-bar"
-                                    style="width: 70%;">
-                                    70%
-                                </div>
-
-                            </div>
-
-
-                            <p>
-                                Rentas
-                            </p>
-
-                            <div class="progress mb-3">
-
-                                <div
-                                    class="progress-bar"
-                                    style="width: 50%;">
-                                    50%
-                                </div>
-
-                            </div>
-
-
-                            <p>
-                                Desarrollo Urbano
-                            </p>
-
-                            <div class="progress">
-
-                                <div
-                                    class="progress-bar"
-                                    style="width: 40%;">
-                                    40%
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Tabla resumen -->
-                <div class="card p-4">
-
-                    <h5>
-                        Resumen de atención
-                    </h5>
-
-                    <table class="table table-hover">
-
-                        <thead>
-
-                            <tr>
-
-                                <th>Área</th>
-                                <th>Expedientes</th>
-                                <th>Atendidos</th>
-                                <th>Pendientes</th>
-
-                            </tr>
-
-                        </thead>
-
-                        <tbody>
-
-                            <tr>
-
-                                <td>
-                                    Obras Públicas
-                                </td>
-
-                                <td>
-                                    50
-                                </td>
-
-                                <td>
-                                    40
-                                </td>
-
-                                <td>
-                                    10
-                                </td>
-
-                            </tr>
-
-
-                            <tr>
-
-                                <td>
-                                    Rentas
-                                </td>
-
-                                <td>
-                                    45
-                                </td>
-
-                                <td>
-                                    38
-                                </td>
-
-                                <td>
-                                    7
-                                </td>
-
-                            </tr>
-
-
-                            <tr>
-
-                                <td>
-                                    Desarrollo Urbano
-                                </td>
-
-                                <td>
-                                    30
-                                </td>
-
-                                <td>
-                                    20
-                                </td>
-
-                                <td>
-                                    10
-                                </td>
-
-                            </tr>
-
-                        </tbody>
-
-                    </table>
-
-                </div>
-
-            </main>
+          <div class="col-md-6 mb-4">
+            <div class="card p-3">
+              <img src="img/grafico-registrados.png" class="img-fluid" alt="Expedientes registrados por semana">
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card p-3">
+              <img src="img/grafico-aprobados.png" class="img-fluid" alt="Expedientes aprobados por semana">
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card p-3">
+              <img src="img/grafico-observados.png" class="img-fluid" alt="Expedientes observados por semana">
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card p-3">
+              <img src="img/grafico-vencidos.png" class="img-fluid" alt="Expedientes vencidos por semana">
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card p-3">
+              <img src="img/grafico-tiempo.png" class="img-fluid" alt="Tiempo promedio de atención por semana">
+            </div>
+          </div>
 
         </div>
+      </main>
 
     </div>
+  </div>
 
 </body>
-
 </html>
