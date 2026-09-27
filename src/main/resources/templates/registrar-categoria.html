@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar categoría</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+<body>
+<nav class="navbar" th:replace="~{fragments/layout :: navbar(rol='Administrador')}"></nav>
+<div class="container-fluid">
+    <div class="row">
+        <aside class="col-md-2 menu-lateral" th:replace="~{fragments/layout :: sidebar}"></aside>
+        <main class="col-md-10 contenido">
+            <h2 class="titulo mb-4">Registrar categoría de trámite</h2>
+            <div class="card p-4 formulario">
+                <form th:action="@{/registrar-categoria}" th:object="${categoria}" method="post">
+                    <div class="mb-3">
+                        <label class="form-label">Nombre del trámite</label>
+                        <input type="text" th:field="*{nombre}" class="form-control" placeholder="Ejemplo: Licencia de funcionamiento" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Plazo de atención (días)</label>
+                        <input type="number" th:field="*{plazoAtencion}" class="form-control" placeholder="Cantidad de días" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Área responsable</label>
+                        <select name="idArea" class="form-select" required>
+                            <option value="" disabled selected>Seleccione un área</option>
+                            <option th:each="a : ${areas}" th:value="${a.id}" th:text="${a.nombre}"></option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Registrar categoría</button>
+                        <a th:href="@{/listar-categorias}" class="btn btn-secondary">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>

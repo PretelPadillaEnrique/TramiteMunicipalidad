@@ -1,0 +1,106 @@
+/* Estilo general de todas las páginas */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Color de la barra superior */
+.navbar {
+    background-color: #12355b;
+}
+
+/* Texto de la barra */
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+/* Menú lateral */
+.menu-lateral {
+    min-height: calc(100vh - 56px);
+    background-color: #12355b;
+}
+
+/* Enlaces del menú */
+.menu-lateral a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+/* Efecto cuando pasamos el mouse o el enlace está activo */
+.menu-lateral a:hover,
+.menu-lateral a.active {
+    background-color: #1d4d7a;
+    color: #ffffff;
+}
+
+/* Espacio del contenido principal */
+.contenido {
+    padding: 25px;
+}
+
+/* Títulos principales */
+.titulo {
+    color: #12355b;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Tarjetas (Cards) */
+.card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Tablas de datos */
+.table thead {
+    background-color: #12355b;
+    color: #ffffff;
+}
+
+/* Etiquetas/Badges de Estado (Para usar en las tablas) */
+.estado-pendiente,
+.estado-aprobado,
+.estado-observado,
+.estado-rechazado {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Estado pendiente */
+.estado-pendiente {
+    background-color: #ffc107;
+    color: #000000;
+}
+
+/* Estado aprobado */
+.estado-aprobado {
+    background-color: #198754;
+    color: #ffffff;
+}
+
+/* Estado observado */
+.estado-observado {
+    background-color: #fd7e14;
+    color: #ffffff;
+}
+
+/* Estado rechazado */
+.estado-rechazado {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+/* Contenedor de formularios */
+.formulario {
+    max-width: 800px;
+    margin: 0 auto;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métricas del sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+
+<body>
+<nav class="navbar" th:replace="~{fragments/layout :: navbar(rol='Administrador')}"></nav>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <aside class="col-md-2 menu-lateral" th:replace="~{fragments/layout :: sidebar}"></aside>
+
+        <main class="col-md-10 contenido">
+            <h2 class="titulo mb-4">Métricas del sistema</h2>
+            <p class="text-muted mb-4">Imágenes referenciales. En este avance no hay conexión a base de datos; en el siguiente avance estos gráficos se alimentarán con datos reales del sistema.</p>
+
+            <div class="row">
+
+                <div class="col-md-6 mb-4">
+                    <div class="card p-3">
+                        <img th:src="@{/img/grafico-registrados.png}" class="img-fluid" alt="Expedientes registrados por semana">
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card p-3">
+                        <img th:src="@{/img/grafico-aprobados.png}" class="img-fluid" alt="Expedientes aprobados por semana">
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card p-3">
+                        <img th:src="@{/img/grafico-observados.png}" class="img-fluid" alt="Expedientes observados por semana">
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card p-3">
+                        <img th:src="@{/img/grafico-vencidos.png}" class="img-fluid" alt="Expedientes vencidos por semana">
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card p-3">
+                        <img th:src="@{/img/grafico-tiempo.png}" class="img-fluid" alt="Tiempo promedio de atención por semana">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
