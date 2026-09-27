@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+
+<!-- Fragmento de la Barra Superior (Navbar), ahora con el rol como parametro -->
+<nav th:fragment="navbar(rol)" class="navbar">
+    <div class="container-fluid">
+            <span class="navbar-brand">
+                Municipalidad de Los Olivos
+            </span>
+        <span class="text-white" th:text="${rol}">Rol</span>
+    </div>
+</nav>
+
+<!-- Fragmento del Menú Lateral (Sidebar) -->
+<aside th:fragment="sidebar" class="col-md-2 menu-lateral">
+    <a th:href="@{/gestionar-expediente}">Gestionar expediente</a>
+    <a th:href="@{/buscar-expediente}">Buscar expediente</a>
+    <a th:href="@{/registrar-area}">Registrar área</a>
+    <a th:href="@{/listar-areas}">Listar áreas</a>
+    <a th:href="@{/registrar-categoria}">Registrar categoría</a>
+    <a th:href="@{/listar-categorias}">Listar categorías</a>
+    <a th:href="@{/registrar-usuario}">Registrar usuario</a>
+    <a th:href="@{/listar-usuarios}">Listar usuarios</a>
+    <a th:href="@{/metricas}">Métricas</a>
+    <a th:href="@{/publicidad}">Publicidad</a>
+    <a th:href="@{/contacto}">Contacto</a>
+    <a th:href="@{/login}">Cerrar sesión</a>
+</aside>
+
+</body>
+</html>
